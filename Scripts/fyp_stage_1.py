@@ -51,6 +51,14 @@ for node in G:
 nx.draw(G, node_color=color_map, with_labels=True)
 plt.show()
 
+#cnm algorithm
+from cdlib import algorithms,viz
+import networkx as nx
+G = nx.karate_club_graph()
+coms = algorithms.greedy_modularity(G)
+pos = nx.spring_layout(G)
+viz.plot_network_clusters(G, coms, pos)
+
 """**Louvain Algorithm**"""
 
 from community import community_louvain
