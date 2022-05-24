@@ -1,4 +1,3 @@
-# https://www.youtube.com/watch?v=8Bf6-KtrlIo&t=314s
 #git clone --depth=1 https://github.com/twintproject/twint.git
 #cd twint
 #pip3 install . -r requirements.txt
